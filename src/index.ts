@@ -1427,3 +1427,37 @@ export type {
   SubmitTransactionOptions,
   SubmitServer,
 } from "./transaction/submit.js";
+
+// ---------------------------------------------------------------------------
+// #862 — Invoice Attestation System
+// ---------------------------------------------------------------------------
+
+export type { Attestation } from "./types.js";
+
+// ---------------------------------------------------------------------------
+// #863 — Campaign Group Management
+// ---------------------------------------------------------------------------
+
+export type { GroupStats } from "./types.js";
+
+// ---------------------------------------------------------------------------
+// #864 — Deadline Extension Voting
+// ---------------------------------------------------------------------------
+
+export type { ExtensionStatus } from "./types.js";
+export {
+  NotEligibleToVoteError,
+  isNotEligibleToVoteError,
+} from "./errors.js";
+
+// ---------------------------------------------------------------------------
+// #865 — Invoice Rating System
+// ---------------------------------------------------------------------------
+
+export type { CreatorRating } from "./types.js";
+export {
+  AlreadyRatedError,
+  isAlreadyRatedError,
+  InvoiceNotReleasedForRatingError,
+  isInvoiceNotReleasedForRatingError,
+} from "./errors.js";
